@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>chARM Console</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <widget class="QGroupBox" name="subject">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>10</y>
+      <width>261</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Subject</string>
+    </property>
+    <widget class="QLabel" name="name_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="age_lab">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Age</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name_fill">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ID_lab">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ID_fill">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="gender_slider">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FEMALE_lab">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MALE_lab">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>M</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="age_fill">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gender_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gender</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="hand_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hand</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hand_slider">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="sliderPosition">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RIGHT_lab">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>110</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>R</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LEFT_lab">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>L</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="health_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Health</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="health_slider">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="STROKE_lab">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>50</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CTRL_lab">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="upperarmL_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Shoulder-to-Elbow Length [in]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="forearmL_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elbow-to-Fingertip Length [in]</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="upperarmL_fill">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="forearmL_fill">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>200</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_push">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>SAVE</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="elbowMax_lcd">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>295</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDial" name="shouldMin_dial">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-90</number>
+     </property>
+     <property name="maximum">
+      <number>0</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="elbowMax_lab">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>230</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>MAX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="elbowMin_lab">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>230</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>MIN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="elbowMin_lcd">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>295</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDial" name="elbowMax_dial">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>250</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>45</number>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDial" name="elbowMin_dial">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>250</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>45</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="shouldMin_lab">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>MIN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="elbowLim_lab">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>320</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Elbow Limits [deg]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="shouldMin_lcd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>295</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="shouldMax_lab">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>230</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>MAX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="shouldMax_lcd">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>295</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDial" name="shouldMax_dial">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>250</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>130</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="shouldLim_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Shoulder Limits [deg]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LtoEE_fill">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>170</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LtoEE_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elbow-to-EE Distance [in]</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addExp_push">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>350</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ADD TO EXPERIMENT</string>
+     </property>
+    </widget>
+    <zorder>elbowMax_dial</zorder>
+    <zorder>elbowMin_dial</zorder>
+    <zorder>shouldMax_dial</zorder>
+    <zorder>name_lab</zorder>
+    <zorder>age_lab</zorder>
+    <zorder>name_fill</zorder>
+    <zorder>ID_lab</zorder>
+    <zorder>ID_fill</zorder>
+    <zorder>gender_slider</zorder>
+    <zorder>FEMALE_lab</zorder>
+    <zorder>MALE_lab</zorder>
+    <zorder>age_fill</zorder>
+    <zorder>gender_lab</zorder>
+    <zorder>hand_lab</zorder>
+    <zorder>hand_slider</zorder>
+    <zorder>RIGHT_lab</zorder>
+    <zorder>LEFT_lab</zorder>
+    <zorder>health_lab</zorder>
+    <zorder>health_slider</zorder>
+    <zorder>STROKE_lab</zorder>
+    <zorder>CTRL_lab</zorder>
+    <zorder>upperarmL_lab</zorder>
+    <zorder>forearmL_lab</zorder>
+    <zorder>upperarmL_fill</zorder>
+    <zorder>forearmL_fill</zorder>
+    <zorder>save_push</zorder>
+    <zorder>elbowMax_lcd</zorder>
+    <zorder>shouldMin_dial</zorder>
+    <zorder>elbowMax_lab</zorder>
+    <zorder>elbowMin_lab</zorder>
+    <zorder>elbowMin_lcd</zorder>
+    <zorder>shouldMin_lab</zorder>
+    <zorder>elbowLim_lab</zorder>
+    <zorder>shouldMin_lcd</zorder>
+    <zorder>shouldMax_lab</zorder>
+    <zorder>shouldMax_lcd</zorder>
+    <zorder>shouldLim_lab</zorder>
+    <zorder>LtoEE_fill</zorder>
+    <zorder>LtoEE_lab</zorder>
+    <zorder>addExp_push</zorder>
+   </widget>
+   <widget class="QGroupBox" name="state">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>410</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>State</string>
+    </property>
+    <widget class="QLabel" name="th2dot_lab">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elbow Velocity [deg/sec]</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th1_lcd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th1dot_lcd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th1_lab">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Shoulder Angle [deg]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th1dot_lab">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Shoulder Velocity [deg/sec]</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th2_lcd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th2dot_lcd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th2_lab">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elbow Angle [deg]</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="calibrate_push">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CALIBRATE EXOSKELETON</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="control">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>610</y>
+      <width>91</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="title">
+     <string>Control</string>
+    </property>
+    <widget class="QCheckBox" name="joint_box">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>J</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="task_box">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>T</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="bumpers_box">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bump?</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="exp_box">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exp?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tune_push">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>TUNE</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="dither_box">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dither?</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="chARMWidget" name="visualizer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>721</width>
+      <height>801</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="jointCtrl">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>610</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Joint Space</string>
+    </property>
+    <widget class="QLabel" name="shouldAng_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Shoulder</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="elbowAng_lab">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Elbow</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDial" name="shouldAng_dial">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>61</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-180</number>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="elbowAng_lcd">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>120</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDial" name="elbowAng_dial">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>61</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-180</number>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="notchesVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="shouldAng_lcd">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="go_push">
+     <property name="geometry">
+      <rect>
+       <x>68</x>
+       <y>120</y>
+       <width>26</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>GO</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="debug">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>131</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Debug</string>
+    </property>
+    <widget class="QLCDNumber" name="xdot_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>130</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="ydot_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>160</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th1Err_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>210</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th2Err_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>240</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th1dotErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th2intErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>360</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="xdotErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>470</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th2dotErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>300</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="xErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>410</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="yErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>440</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="th1intErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="ydotErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>500</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="xintErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>530</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="y_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="time_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="x_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>70</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>590</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="Fx_lcd">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>640</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="T1_lcd">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>610</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="yintErr_lcd">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>560</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="time_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>time</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="x_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="y_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Y</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xdot_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Xdot</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ydot_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ydot</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="T_lab">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>610</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>T</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="F_lab">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>640</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th1dotErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th1dot Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th1Err_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th1 Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th2Err_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th2 Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th2dotErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th2dot Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th1intErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th1int Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="th2intErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>th2int Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="yErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>440</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Y Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xintErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>530</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Xint Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>X Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="yintErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>560</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Yint Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xdotErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>470</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Xdot Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ydotErr_lab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>500</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ydot Err</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="T2_lcd">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>610</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="Fy_lcd">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>640</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="START_STOP_push">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>780</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>START DATA RECORDING</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="taskCtrl">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>610</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Task Space</string>
+    </property>
+    <widget class="QLCDNumber" name="Y_lcd">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>110</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="X_lcd">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="instructions">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Click in visualizer window for position control.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X_lab">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>X  =</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Y_lab">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Y  =</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>debug</zorder>
+   <zorder>subject</zorder>
+   <zorder>state</zorder>
+   <zorder>control</zorder>
+   <zorder>visualizer</zorder>
+   <zorder>jointCtrl</zorder>
+   <zorder>START_STOP_push</zorder>
+   <zorder>taskCtrl</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>chARMWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>charmwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>name_fill</tabstop>
+  <tabstop>ID_fill</tabstop>
+  <tabstop>age_fill</tabstop>
+  <tabstop>health_slider</tabstop>
+  <tabstop>gender_slider</tabstop>
+  <tabstop>hand_slider</tabstop>
+  <tabstop>upperarmL_fill</tabstop>
+  <tabstop>LtoEE_fill</tabstop>
+  <tabstop>forearmL_fill</tabstop>
+  <tabstop>shouldMin_dial</tabstop>
+  <tabstop>shouldMax_dial</tabstop>
+  <tabstop>elbowMin_dial</tabstop>
+  <tabstop>elbowMax_dial</tabstop>
+  <tabstop>save_push</tabstop>
+  <tabstop>calibrate_push</tabstop>
+  <tabstop>joint_box</tabstop>
+  <tabstop>task_box</tabstop>
+  <tabstop>bumpers_box</tabstop>
+  <tabstop>exp_box</tabstop>
+  <tabstop>tune_push</tabstop>
+  <tabstop>shouldAng_dial</tabstop>
+  <tabstop>elbowAng_dial</tabstop>
+  <tabstop>START_STOP_push</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

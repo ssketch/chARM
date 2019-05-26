@@ -1,0 +1,92 @@
+;s826.inf
+;Sensoray 826 Windows Driver. UWP build
+;Copyright : Sensoray Company Inc. 2010-2017
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=DataAcquisition
+ClassGUID={6BD5018A-FB6B-4e60-A163-33BCBA4F205B}
+Provider=%SENSORAY%
+DriverVer = 06/02/2017,1.0.14
+CatalogFile=s826_uwp.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+s826_uwp_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=DataClassReg     
+
+[DataClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+s826_uwp.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Sensoray,NTamd64
+
+[Sensoray.NTamd64]
+%s826_uwp.DeviceDesc%=s826_uwp_Device, Root\s826_uwp, PCI\VEN_10B5&DEV_9056&SUBSYS_905610B5
+%s826_uwp.DeviceDesc%=s826_uwp_Device, Root\s826_uwp, PCI\VEN_10B5&DEV_9056&SUBSYS_60000826
+%s826_uwp.DeviceDesc%=s826_uwp_Device, Root\s826_uwp, PCI\VEN_10B5&DEV_9056&SUBSYS_08266000
+
+[s826_uwp_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+s826_uwp.sys
+
+;-------------- Service installation
+[s826_uwp_Device.NT.Services]
+AddService = s826_uwp,%SPSVCINST_ASSOCSERVICE%, s826_uwp_Service_Inst
+
+; -------------- s826_uwp driver install sections
+[s826_uwp_Service_Inst]
+DisplayName    = %s826_uwp.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\s826_uwp.sys
+
+;
+;--- s826_uwp_Device Coinstaller installation ------
+;
+
+[s826_uwp_Device.NT.CoInstallers]
+AddReg=s826_uwp_Device_CoInstaller_AddReg
+CopyFiles=s826_uwp_Device_CoInstaller_CopyFiles
+
+[s826_uwp_Device_CoInstaller_AddReg]
+;
+
+
+[s826_uwp_Device_CoInstaller_CopyFiles]
+;
+
+
+[s826_uwp_Device.NT.Wdf]
+KmdfService =  s826_uwp, s826_uwp_wdfsect
+[s826_uwp_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Sensoray Company Inc"
+ClassName = "Data Acquisition"
+DiskName = "Sensoray 826 Universal Driver Installation Disk"
+s826_uwp.DeviceDesc = "Sensoray 826 Universal Driver"
+s826_uwp.SVCDESC = "Sensoray 826 Universal Driver Service"
+SENSORAY = "Sensoray Company Inc"
