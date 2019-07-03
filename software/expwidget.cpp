@@ -2012,7 +2012,7 @@ void expWidget::keyPressEvent(QKeyEvent *event)
     }
 
     // get pressed key (only register if previous press has been processed
-    // and current key is SPACE, RIGHT, LEFT, UP, or DOWN)
+    // and current key is SPACE, RIGHT, LEFT, UP, DOWN, or 'S')
     switch (event->key()) {
 
     case Qt::Key_Space:
